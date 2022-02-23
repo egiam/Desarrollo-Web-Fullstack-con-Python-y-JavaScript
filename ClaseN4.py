@@ -1,4 +1,4 @@
-"""
+
 #Excepciones
 import sys #importante para salir del programa, utilizar el system
 
@@ -29,7 +29,7 @@ except:
 finally:
     print("El try y except finalizado.")
   
-"""
+
 #-------------------------------
 
 #POO en python
