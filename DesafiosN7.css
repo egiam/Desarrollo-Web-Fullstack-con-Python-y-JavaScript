@@ -1,0 +1,50 @@
+
+/* el desafío es darle el mismo aspecto a nuestra 
+wikipedia usando las herramientas de CSS aprendidas.
+*/
+
+.bienvenidos{
+    font-weight: bold;
+    padding-right: 12px;
+    list-style: none;
+    display: inline-flex;
+    text-decoration: none;
+    color: black;
+}
+
+.bienvenidos:hover{
+    background-color: white;
+    background-position: center;
+    background-size: 100%;
+}
+
+.articulos{
+    list-style: none;
+    text-decoration: none;
+    display: inline-flex;
+}
+
+.articulos:hover{
+    text-decoration: underline;
+}
+
+.Bienvenidos{
+    list-style: none;
+    display: inline-flex;
+    text-decoration: none;
+}
+
+.Bienvenidos:hover{
+    text-decoration: underline;
+}
+
+.mw-jump-link{
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+.mw-jump-link:hover{
+    text-decoration: underline;
+}
+
+
