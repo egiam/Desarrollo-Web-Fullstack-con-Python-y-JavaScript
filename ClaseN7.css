@@ -1,0 +1,62 @@
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: red;
+}
+
+.tabla{
+    color: blue;
+}
+
+p > span{
+    font-weight: bold;
+    color: pink;
+}
+
+p{
+    background: white;
+    margin: 7px;
+    padding: 7px;
+    border: 1px solid;
+}
+
+.listas{
+    color: green;
+}
+
+th{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aqua;
+}
+
+td{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: coral;
+}
+
+#bloque_de_listas{
+    border: 1px solid black;
+    background-color: burlywood;
+    margin: 3px;
+    padding: 3px;
+    text-align: justify;
+    width: 200px;
+}
+
+p::selection{
+    background-color: yellow;
+}
+
+#cancelar{
+    font-size: 20px;
+    background-color: red;
+    color: white;
+}
+
+#cancelar:hover{
+    background-color: darkred;
+    color: wheat;
+}
+
+
