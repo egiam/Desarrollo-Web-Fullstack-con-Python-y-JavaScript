@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi portal</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            /* Cuando tenga borde, se adapte dinamicamente
+            todo lo de adentro se va a amoldar. */
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        .header{
+            padding: 60px;
+            text-align: center;
+            background-color: lightskyblue;
+            color: darkslategray;
+        }
+
+        .navbar{
+            display: flex;
+            /* hace q se distribuya todo lo q contenga, 
+            todo lo dentro de mi barra de navegacion
+            se valla acomodando en el menu */
+            background-color: dimgrey;
+            color: floralwhite;
+        }
+
+        .navbar a{
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        .navbar a:hover{
+            background-color:  wheat;
+            color: black;
+        }
+
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .side{
+            flex: 30%;
+            background-color: lightsteelblue;
+            padding: 20px;
+        }
+
+        .main{
+            flex: 70%;
+            background-color: lightyellow;
+            padding: 20px;
+        }
+
+        .imagen{
+            background-color: black;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .footer{
+            padding: 20px;
+            text-align: center;
+            background-color: lightpink;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div>
+        <h4>Mensajes de notificaciones</h4>
+    </div>
+
+    <div class="header">
+        <h1>Mi portal Web</h1>
+        <p>Este es un layout responsivo</p>
+    </div>
+    
+    <div class="navbar">
+        <a href="#">Enlace</a>
+        <a href="#">Enlace</a>
+        <a href="#">Enlace</a>
+        <a href="#">Enlace</a>
+        <a href="#">Enlace</a>
+        <a href="#">Enlace</a>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>Nombre de perfil</h2>
+            <h5>Algo mas...</h5>
+            <div class="imagen" style="height: 200px">
+                Aca la imagen
+            </div>
+            <p>Alguna descripcion...</p>
+            <div class="imagen" style="height: 200px">
+                Aca la imagen
+            </div>
+            <div class="imagen" style="height: 200px">
+                Aca la imagen
+            </div>
+        </div>
+
+        <div class="main">
+            <h2>Titulo cabecera</h2>
+            <h5>subtitulo</h5>
+            <div class="imagen" style="height: 200px">
+                Aca la imagen
+            </div>
+            <p>contenido</p>
+            <p>Mas contenido...</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Pie de pagina...</h2>
+    </div>
+
+</body>
+</html>
