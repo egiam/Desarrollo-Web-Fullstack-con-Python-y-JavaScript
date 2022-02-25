@@ -20,6 +20,32 @@
         }
 
     </style>
+
+    <script>
+
+        confirm("Confirmar")
+
+        function hola(){
+            alert("Hola")
+        }
+
+        var miVariable = 0;
+        var miNombre = "Ezequiel"
+
+        const miConstante = 3.14;
+        /* Una constante */
+
+        let miVariableConAlcanceRestringido = 0;
+        /* solo sirve dentro de la funcion en la q esta */
+
+        var contador = 0;
+        function contar(){
+            contador++;
+            document.querySelector("div.alert.alert-danger").innerHTML = contador;
+        }
+
+    </script>
+
 </head>
 <body>
 
@@ -31,12 +57,12 @@
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="#" class="btn btn-primary" onclick="contar()">Contar</a>
         </div>
       </div>
 
-    <div class="alert alert-primary" role="alert">
-        Este es un Mensaje
+    <div class="alert alert-danger" role="alert">
+        0
     </div>
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, exercitationem? Facere ipsam nulla perferendis quod est similique nam aperiam praesentium minima obcaecati facilis ducimus, ipsum molestias porro repudiandae. Illum, doloribus!</p>
