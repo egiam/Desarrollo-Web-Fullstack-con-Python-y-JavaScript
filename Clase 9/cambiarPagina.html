@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 2</title>
+
+    <style>
+
+        div{
+            display: none;
+        }
+
+    </style>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function(){
+            document.querySelectorAll('button').forEach(button => {
+                button.onclick = function(){
+                    mostrarPagina(this.dataset.pagina);
+                }
+            });
+        });
+
+        function mostrarPagina(pagina){
+            document.querySelectorAll('div').forEach(div => {
+                div.style.display = 'none';
+            });
+
+            document.querySelector(`#${pagina}`).style.display = 'block';
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <button data-pagina="pagina1">Pagina 1</button>
+
+    <button data-pagina="pagina2">Pagina 2</button>
+
+    <button data-pagina="pagina3">Pagina 3</button>
+
+    <div id="pagina1">
+        <h1>Esta es la pagina 1</h1>
+    </div>
+
+    <div id="pagina2">
+        <h1>Esta es la pagina 2</h1>
+    </div>
+
+    <div id="pagina3">
+        <h1>Esta es la pagina 3</h1>
+    </div>
+
+    
+    
+</body>
+</html>
