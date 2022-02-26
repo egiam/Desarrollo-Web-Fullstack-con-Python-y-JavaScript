@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 2</title>
+
+    <script>
+
+        let contador = localStorage.getItem("contadoralmacenado");
+        function conteo(){
+            contador++;
+            localStorage.setItem("contadoralmacenado", contador);
+            document.querySelector('p').innerHTML = contador;
+            if(contador % 10 === 0){
+                alert(`Contador ahora es ${contador}`)
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('p').innerHTML = localStorage.getItem("contadoralmacenado");
+            document.querySelector('button').onclick = conteo;
+        });
+
+
+
+    </script>
+
+</head>
+<body>
+
+    <h1>Contador</h1>
+    <p>0</p>
+
+    <button onclick="conteo()">Contar</button>
+    
+</body>
+</html>

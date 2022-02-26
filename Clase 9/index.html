@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI JS</title>
+
+    <style>
+
+
+
+    </style>
+
+    <script>
+        
+
+        function fecha(){
+            document.querySelector('p').innerHTML = Date();
+          }
+
+        
+        const hola = function(){
+            console.log("Hola Mundo");
+        }
+
+        setTimeout(hola, 1000)
+        
+
+        setTimeout(function(){
+            alert("Hola Mundo");}
+            , 1000);
+        
+
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('button').forEach(button => {
+                button.onclick = () => {
+                    document.querySelector('#texto').style.color = button.dataset.color;
+                }
+            });
+        });
+        
+    </script>
+
+</head>
+<body>
+    
+    <h2>Codigo JS</h2>
+    <p id="texto">Texto</p>
+    <button data-color="red">Cambiar Color</button>
+    <button onclick="fecha()">Colocar Fecha</button>
+
+</body>
+</html>
